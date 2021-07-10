@@ -1,0 +1,769 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OptimizationNative</name>
+    </assembly>
+    <members>
+        <member name="T:OptimizationNative.Optimizer">
+            <summary>
+            The Optimizer class provides a CLS compliant, Object (native) interface to the
+            MATLAB functions contained in the files:
+            <newpara></newpara>
+            C:\Users\dawid\source\repos\masterthesis\CADawid\matlab\source\ic_barrier.m
+            <newpara></newpara>
+            C:\Users\dawid\source\repos\masterthesis\CADawid\matlab\source\initConstraints.m
+            </summary>
+            <remarks>
+            @Version 1.0
+            </remarks>
+        </member>
+        <member name="M:OptimizationNative.Optimizer.#cctor">
+            <summary internal= "true">
+            The static constructor instantiates and initializes the MATLAB Runtime instance.
+            </summary>
+        </member>
+        <member name="M:OptimizationNative.Optimizer.#ctor">
+            <summary>
+            Constructs a new instance of the Optimizer class.
+            </summary>
+        </member>
+        <member name="M:OptimizationNative.Optimizer.Finalize">
+            <summary internal= "true">
+            Class destructor called by the CLR garbage collector.
+            </summary>
+        </member>
+        <member name="M:OptimizationNative.Optimizer.Dispose">
+            <summary>
+            Frees the native resources associated with this object
+            </summary>
+        </member>
+        <member name="M:OptimizationNative.Optimizer.Dispose(System.Boolean)">
+            <summary internal= "true">
+            Internal dispose function
+            </summary>
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier">
+             <summary>
+             Provides a single output, 0-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object)">
+             <summary>
+             Provides a single output, 1-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object)">
+             <summary>
+             Provides a single output, 2-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 3-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 4-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 5-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 6-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 7-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 8-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 9-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 10-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 11-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 12-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <param name="optimalityToleranceParam">Input argument #12</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 13-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <param name="optimalityToleranceParam">Input argument #12</param>
+             <param name="maxIterationsParam">Input argument #13</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a single output, 14-input Objectinterface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <param name="optimalityToleranceParam">Input argument #12</param>
+             <param name="maxIterationsParam">Input argument #13</param>
+             <param name="clothId">Input argument #14</param>
+             <returns>An Object containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object)">
+             <summary>
+             Provides the standard 1-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object)">
+             <summary>
+             Provides the standard 2-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 3-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 4-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 5-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 6-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 7-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 8-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 9-input Object interface to the ic_barrier MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 10-input Object interface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 11-input Object interface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 12-input Object interface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <param name="optimalityToleranceParam">Input argument #12</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 13-input Object interface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <param name="optimalityToleranceParam">Input argument #12</param>
+             <param name="maxIterationsParam">Input argument #13</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 14-input Object interface to the ic_barrier MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="masses">Input argument #1</param>
+             <param name="systemState">Input argument #2</param>
+             <param name="constraints">Input argument #3</param>
+             <param name="k">Input argument #4</param>
+             <param name="g">Input argument #5</param>
+             <param name="dt">Input argument #6</param>
+             <param name="initBarrierParam">Input argument #7</param>
+             <param name="initTrustRegionRadiusParam">Input argument #8</param>
+             <param name="stepToleranceParam">Input argument #9</param>
+             <param name="maxFunctionEvaluationsParam">Input argument #10</param>
+             <param name="constraintToleranceParam">Input argument #11</param>
+             <param name="optimalityToleranceParam">Input argument #12</param>
+             <param name="maxIterationsParam">Input argument #13</param>
+             <param name="clothId">Input argument #14</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.ic_barrier(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the ic_barrier function in which the input and output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints">
+             <summary>
+             Provides a void output, 0-input Objectinterface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Object)">
+             <summary>
+             Provides a void output, 1-input Objectinterface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="systemState">Input argument #1</param>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Object,System.Object)">
+             <summary>
+             Provides a void output, 2-input Objectinterface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="systemState">Input argument #1</param>
+             <param name="alpha">Input argument #2</param>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a void output, 3-input Objectinterface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="systemState">Input argument #1</param>
+             <param name="alpha">Input argument #2</param>
+             <param name="clothId">Input argument #3</param>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides a void output, 4-input Objectinterface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="systemState">Input argument #1</param>
+             <param name="alpha">Input argument #2</param>
+             <param name="clothId">Input argument #3</param>
+             <param name="colliders">Input argument #4</param>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Int32)">
+             <summary>
+             Provides the standard 0-input Object interface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Int32,System.Object)">
+             <summary>
+             Provides the standard 1-input Object interface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="systemState">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Int32,System.Object,System.Object)">
+             <summary>
+             Provides the standard 2-input Object interface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="systemState">Input argument #1</param>
+             <param name="alpha">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Int32,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 3-input Object interface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="systemState">Input argument #1</param>
+             <param name="alpha">Input argument #2</param>
+             <param name="clothId">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Int32,System.Object,System.Object,System.Object,System.Object)">
+             <summary>
+             Provides the standard 4-input Object interface to the initConstraints MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="systemState">Input argument #1</param>
+             <param name="alpha">Input argument #2</param>
+             <param name="clothId">Input argument #3</param>
+             <param name="colliders">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.initConstraints(System.Int32,System.Object[]@,System.Object[],System.Object[])">
+             <summary>
+             Provides an interface for the initConstraints function in which the input and
+             output
+             arguments are specified as an array of Objects.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             init gradients
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of Object output arguments</param>
+             <param name= "argsIn">Array of Object input arguments</param>
+             <param name= "varArgsIn">Array of Object representing variable input
+             arguments</param>
+            
+        </member>
+        <member name="M:OptimizationNative.Optimizer.WaitForFiguresToDie">
+             <summary>
+             This method will cause a MATLAB figure window to behave as a modal dialog box.
+             The method will not return until all the figure windows associated with this
+             component have been closed.
+             </summary>
+             <remarks>
+             An application should only call this method when required to keep the
+             MATLAB figure window from disappearing.  Other techniques, such as calling
+             Console.ReadLine() from the application should be considered where
+             possible.</remarks>
+            
+        </member>
+    </members>
+</doc>
